@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Incenso com Cafeína | Estímulo, Foco e Bem-Estar</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--p:#2D1B0E;--pl:#4D3424;--a:#C67B3A;--a2:#A65E2E;--g:#D4A057;--bg:#F0EBE4;--cr:#FAF6F0;--bd:#E8D9CC;--tx:#5A4030}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--p);line-height:1.6;padding:16px}
+.wrap{max-width:1150px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 20px 60px rgba(45,27,14,.12);overflow:hidden}
+.serif{font-family:'Playfair Display',serif}
+.top{background:linear-gradient(135deg,var(--p),#1F1209);color:var(--cr);padding:12px 16px;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;display:flex;justify-content:center;gap:10px 18px;flex-wrap:wrap;text-align:center}
+.top b{background:var(--a);padding:2px 14px;border-radius:30px;color:#fff}
+.btn{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff;border:0;padding:13px 28px;border-radius:12px;font:700 15px 'Inter',sans-serif;cursor:pointer;box-shadow:0 4px 16px rgba(166,94,46,.3);transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.hero{display:grid;grid-template-columns:1fr 1fr;background:linear-gradient(145deg,var(--cr),var(--bg))}
+.hc{padding:44px 40px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.badge{align-self:flex-start;background:#F0E8DE;padding:6px 16px;border-radius:40px;font-size:12px;font-weight:700;color:var(--pl)}
+h1{font:900 44px/1.05 'Playfair Display',serif;color:#1A0F08}
+h1 span{background:linear-gradient(135deg,var(--a),var(--g));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub{font-size:17px;color:#6B5543}
+.ben{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;font-size:14px;font-weight:500}
+.form{background:#F4ECE2;border:1px solid var(--bd);border-radius:16px;padding:18px;display:flex;gap:10px;flex-wrap:wrap}
+.form input,.age input{flex:1;min-width:130px;padding:13px 16px;border:2px solid #DCCFC2;border-radius:12px;font:14px 'Inter',sans-serif;outline:0;background:#fff;color:var(--p)}
+.form input:focus,.age input:focus{border-color:var(--a)}
+.scene{position:relative;min-height:520px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#87CEEB,#5BA3C9 30%,#3D7A5A 55%,#2D5A3D 70%,#1A3D28)}
+.plant{position:absolute;bottom:0;left:0;right:0;height:60%;display:flex;flex-direction:column-reverse;justify-content:space-around;pointer-events:none}
+.row{display:flex;justify-content:center;gap:22px}
+.row i{width:16px;height:30px;background:radial-gradient(ellipse at 40% 30%,#4A8C3F,#1F5A1F);border-radius:50% 50% 40% 40%;position:relative}
+.row i:after{content:'';position:absolute;width:5px;height:7px;background:#C0392B;border-radius:50%;top:6px;left:9px}
+.inc{position:relative;z-index:5;background:rgba(0,0,0,.18);backdrop-filter:blur(3px);padding:28px 36px 22px;border-radius:24px;text-align:center}
+.stick{width:5px;height:130px;margin:0 auto;background:linear-gradient(#8B6B4A,#3D2A1A);border-radius:3px;position:relative;transform-origin:bottom;animation:sw 4.5s ease-in-out infinite}
+@keyframes sw{50%{transform:rotate(3deg)}0%,100%{transform:rotate(-3deg)}}
+.tip{position:absolute;top:-8px;left:-8px;width:20px;height:20px;border-radius:50%;background:radial-gradient(#FF6B00,#CC3300 60%,#8B1A00);box-shadow:0 0 30px rgba(255,69,0,.7);animation:gl 1.8s infinite alternate}
+@keyframes gl{to{box-shadow:0 0 55px rgba(255,69,0,.9);transform:scale(1.12)}}
+.base{width:90px;height:14px;margin:0 auto;border-radius:50%;background:linear-gradient(#8B6B4A,#5A3D2B)}
+.sm{position:absolute;top:10px;left:50%;width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.3);filter:blur(6px);animation:up 6s ease-out infinite}
+@keyframes up{0%{transform:translate(0,0) scale(.4);opacity:.6}100%{transform:translate(14px,-150px) scale(2.8);opacity:0}}
+.inc h2{font:900 30px 'Playfair Display',serif;color:#fff;margin-top:14px;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.inc h2 span{color:#F0C98A}
+.inc p{color:rgba(255,255,255,.8);font-size:12px;letter-spacing:3px;text-transform:uppercase}
+.age{padding:32px 24px;background:linear-gradient(135deg,#F8F3EC,#F0E8DE);border-top:1px solid var(--bd);text-align:center}
+.age h3{font:700 24px 'Playfair Display',serif}
+.age p{font-size:14px;color:#6B5543;margin:4px 0 14px}
+.age .r{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.age input{flex:0 1 150px;text-align:center}
+#msg{font-size:13px;color:var(--a2);font-weight:600;min-height:20px;margin-top:8px}
+.lab{padding:40px 36px;background:linear-gradient(160deg,#1F1209,#3A2415);color:#F5E6D3;animation:in .5s}
+.lab[hidden],.pop[hidden]{display:none}
+@keyframes in{from{opacity:0;transform:translateY(20px)}}
+.lab h2{font:700 28px 'Playfair Display',serif;color:#fff}
+.lab .s{opacity:.75;font-size:14px;margin:4px 0 18px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{background:rgba(255,255,255,.08);color:#F5E6D3;border:1px solid rgba(255,255,255,.15);padding:9px 18px;border-radius:30px;font:600 13px 'Inter',sans-serif;cursor:pointer}
+.tab.on{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff;border-color:transparent}
+.pn{display:none;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px}
+.pn.on{display:grid;animation:in .4s}
+.pn h3{font:700 21px 'Playfair Display',serif;color:#fff;margin-bottom:8px}
+.pn p,.pn li{font-size:14px;line-height:1.8;color:#EADBC8}
+.pn ul{padding-left:18px;margin-top:6px}
+.chip{display:inline-block;background:rgba(255,255,255,.12);padding:3px 12px;border-radius:20px;font-size:12px;margin:8px 4px 0 0}
+.fig{background:rgba(255,255,255,.07);border-radius:16px;padding:16px;text-align:center;font-size:64px;line-height:1.2}
+.fig small{display:block;font-size:12px;opacity:.7;font-family:'Inter',sans-serif}
+.fig svg{width:100%;max-height:220px}
+.pop{position:fixed;inset:0;background:rgba(26,15,8,.7);backdrop-filter:blur(4px);z-index:99;display:flex;align-items:center;justify-content:center;padding:20px}
+.box{background:#fff;border-radius:24px;max-width:430px;width:100%;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.4);animation:in .35s}
+.pt{background:linear-gradient(135deg,var(--a),#7A3E1C);text-align:center;font-size:60px;padding:22px;position:relative}
+.px{position:absolute;top:12px;right:14px;background:rgba(255,255,255,.25);color:#fff;border:0;width:30px;height:30px;border-radius:50%;font-size:15px;cursor:pointer}
+.pb{padding:22px 26px 4px;min-height:170px}
+.st{display:none}.st.on{display:block;animation:in .3s}
+.st h3{font:700 22px 'Playfair Display',serif;margin-bottom:8px}
+.st p{font-size:15px;color:var(--tx);line-height:1.7}
+.warn{background:#FFF3E0;border-left:4px solid var(--a);padding:10px 14px;border-radius:8px;margin-top:10px;font-size:14px;color:var(--tx)}
+.dots{display:flex;gap:8px;justify-content:center;margin:12px 0}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--bd);transition:.3s}
+.dots i.on{background:var(--a);width:26px;border-radius:6px}
+.pf{display:flex;gap:10px;padding:4px 26px 24px}
+.pf button{flex:1;padding:13px;border-radius:12px;border:0;font:700 14px 'Inter',sans-serif;cursor:pointer}
+#bk{background:#F0E8DE;color:var(--p)}#bk:disabled{opacity:.4}
+#nx{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff}
+.cont{padding:40px 36px;background:linear-gradient(135deg,var(--cr),#F5EDE4);border-top:1px solid var(--bd)}
+.cont>h2{font:700 28px 'Playfair Display',serif;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:22px 26px}
+.card.w{grid-column:1/-1}
+.card h4{font:700 18px 'Playfair Display',serif;margin-bottom:8px}
+.card p,.card li{font-size:14px;color:var(--tx);line-height:1.8}
+.card p+p{margin-top:8px}
+.card ol,.card ul{padding-left:20px}
+.hl{color:var(--a);font-weight:600}
+.tags span{display:inline-block;background:#F0E8DE;padding:4px 14px;border-radius:30px;font-size:12px;font-weight:600;color:var(--pl);margin:6px 6px 0 0}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:8px 0 12px}
+.res div{background:#F8F3EC;border-radius:12px;padding:14px;text-align:center;font-size:13px;font-weight:600}
+.res b{display:block;font-size:26px}
+.meta{background:var(--p);color:var(--cr);padding:14px 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px}
+.meta b{background:rgba(255,255,255,.13);padding:3px 14px;border-radius:30px;font-weight:800;letter-spacing:1px}
+.q{text-align:center;padding:26px 16px;background:#F4ECE2;font:italic 20px 'Playfair Display',serif;color:var(--pl)}
+.q span{color:var(--a)}
+@media(max-width:860px){.hero,.grid,.pn.on{grid-template-columns:1fr}.hc{padding:30px 22px}h1{font-size:34px}.scene{min-height:400px}.lab,.cont{padding:28px 18px}.row{gap:12px}}
+@media(max-width:480px){h1{font-size:28px}.ben{grid-template-columns:1fr}.btn{width:100%}.inc{padding:20px 18px}.inc h2{font-size:22px}.stick{height:90px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><span>🧪 Projeto científico</span><span>📋 3B • Luana</span><b>🎯 Inovação sustentável</b><span>🌱 Aromaterapia</span></div>
+
+<div class="hero">
+<div class="hc">
+<div class="badge">Aromaterapia &amp; Neurociência</div>
+<h1>Incenso com <br><span>Base de Cafeína</span></h1>
+<p class="sub"><strong>Estímulo, foco e bem-estar</strong> através da aromaterapia. Uma inovação que une ciência, sustentabilidade e cuidado com a mente.</p>
+<div class="ben"><div>🧠 Estimula o foco</div><div>☕ Base de cafeína natural</div><div>🌿 100% artesanal</div><div>♻️ Sustentável</div></div>
+<div class="form"><input id="nome" placeholder="Seu nome"><input id="email" type="email" placeholder="Seu e-mail"><button class="btn" id="cta">Quero Participar →</button></div>
+</div>
+<div class="scene">
+<div class="plant" id="plant"></div>
+<div class="inc">
+<div style="position:relative;height:0"><i class="sm"></i><i class="sm" style="animation-delay:2s;left:46%"></i><i class="sm" style="animation-delay:4s;left:54%"></i></div>
+<div class="stick"><div class="tip"></div></div><div class="base"></div>
+<h2>INCENSO COM <span>CAFEÍNA</span></h2><p>Estímulo • Foco • Bem-Estar</p>
+</div>
+</div>
+</div>
+
+<div class="age">
+<h3>🔎 Escolha o nível da explicação</h3>
+<p>Informe sua idade para ver o conteúdo mais adequado para você.</p>
+<div class="r"><input id="idade" type="number" min="1" max="120" placeholder="Sua idade"><button class="btn" id="ver">Ver explicação →</button></div>
+<div id="msg"></div>
+</div>
+
+<div class="lab" id="lab" hidden>
+<h2>🔬 Laboratório: a ciência por trás do incenso</h2>
+<p class="s">Explicação aprofundada para maiores de 18 anos.</p>
+<div class="tabs"><button class="tab on" data-t="t1">🧠 Cérebro</button><button class="tab" data-t="t2">🔥 Combustão</button><button class="tab" data-t="t3">📐 Método</button><button class="tab" data-t="t4">⚠️ Segurança</button></div>
+
+<div class="pn on" id="t1"><div><h3>Como a cafeína age no cérebro</h3>
+<p>O cérebro acumula <strong>adenosina</strong> ao longo do dia, molécula que sinaliza cansaço. A cafeína (1,3,7-trimetilxantina) ocupa os receptores A1 e A2A e bloqueia esse sinal, o que aumenta a liberação de dopamina e noradrenalina.</p>
+<p>Ponto em aberto: <strong>a cafeína inalada pela fumaça chega ao cérebro em quantidade relevante?</strong> O aroma, a expectativa e o ritual também podem dar sensação de foco.</p>
+<span class="chip">Adenosina</span><span class="chip">Dopamina</span><span class="chip">Efeito placebo</span></div>
+<div class="fig">🧠<small>Receptores de adenosina bloqueados pela cafeína</small></div></div>
+
+<div class="pn" id="t2"><div><h3>O que acontece quando o incenso queima</h3>
+<p>A cafeína sublima por volta de <strong>178 °C</strong>, e a brasa passa disso, então parte pode ir para o ar. Mas a queima também libera <strong>CO, material particulado e compostos voláteis</strong> do carvão, da goma e do café.</p>
+<ul><li>A quantidade real de cafeína na fumaça é desconhecida.</li><li>Medir exigiria análise de laboratório.</li><li>Aqui avaliamos aroma, duração e percepção.</li></ul></div>
+<div class="fig"><svg viewBox="0 0 200 190"><g fill="none" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"><path d="M96 66C78 48 112 38 96 20"><animate attributeName="stroke-opacity" values=".2;.9;.2" dur="3s" repeatCount="indefinite"/></path><path d="M108 66C126 50 92 40 110 24"><animate attributeName="stroke-opacity" values=".9;.2;.9" dur="3s" repeatCount="indefinite"/></path></g><line x1="102" y1="76" x2="102" y2="168" stroke="#8B6B4A" stroke-width="6" stroke-linecap="round"/><circle cx="102" cy="74" r="9" fill="#FF5A1F"><animate attributeName="r" values="8;11;8" dur="1.6s" repeatCount="indefinite"/></circle><rect x="74" y="168" width="56" height="8" rx="4" fill="#5A3D2B"/><g font-size="11" fill="#fff" font-family="Inter,sans-serif"><text x="118" y="78">Brasa &gt; 178 °C</text><text x="118" y="34">Fumaça</text></g></svg><small>Esquema ilustrativo, sem escala</small></div></div>
+
+<div class="pn" id="t3"><div><h3>Desenho do experimento</h3>
+<p>Para separar o efeito da cafeína do efeito do aroma, compare <strong>incenso com café</strong> com um <strong>incenso controle</strong>, em teste cego.</p>
+<ul><li><strong>Variável:</strong> quantidade de café em pó.</li><li><strong>Medidas:</strong> tempo de queima e notas de 1 a 5 (aroma, fumaça, foco).</li><li><strong>Controle:</strong> mesmo formato, base e ambiente.</li><li><strong>Registro:</strong> diário de bordo.</li></ul></div>
+<div class="fig">⚗️<small>Misturar → modelar → secar 5–10 dias → testar → registrar</small></div></div>
+
+<div class="pn" id="t4"><div><h3>Limites e cuidados</h3>
+<p>Não há evidência sólida de que a fumaça de incenso com cafeína produza efeito estimulante mensurável. Os resultados deste trabalho são <strong>exploratórios</strong>.</p>
+<ul><li>Use em ambiente ventilado e por pouco tempo.</li><li>Evite perto de gestantes, crianças, pessoas com asma ou sensibilidade à cafeína.</li><li>Nunca deixe a brasa sem supervisão.</li></ul></div>
+<div class="fig">🌬️<small>Ventilação é a regra número 1</small></div></div>
+</div>
+
+<div class="pop" id="pop" hidden><div class="box" role="dialog" aria-modal="true">
+<div class="pt"><button class="px" id="px" aria-label="Fechar">✕</button><span id="em">☕</span></div>
+<div class="pb">
+<div class="st on"><h3>O que é?</h3><p>Um <strong>incenso feito com café em pó</strong>. Ele queima devagar e solta um aroma gostoso.</p></div>
+<div class="st"><h3>Qual a ideia?</h3><p>Queremos descobrir se esse <strong>cheiro ajuda a se sentir mais atento</strong> na hora de estudar.</p></div>
+<div class="st"><h3>Como é feito?</h3><p><strong>Misturar → modelar → secar (5 a 10 dias) → testar a queima.</strong> Depois anotamos o que as pessoas perceberam.</p></div>
+<div class="st"><h3>Segurança primeiro!</h3><p>Fogo e fumaça pedem cuidado.</p><div class="warn">✅ Só acenda com um <strong>adulto por perto</strong>.<br>✅ Em lugar <strong>ventilado</strong>, longe de papel e cortina.<br>🚫 Não é para tomar nem para "ficar com energia".</div></div>
+</div>
+<div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+<div class="pf"><button id="bk" disabled>← Voltar</button><button id="nx">Próximo →</button></div>
+</div></div>
+
+<div class="cont"><h2>📋 Projeto Completo</h2><div class="grid">
+<div class="card"><h4>📖 Introdução</h4><p>Os incensos são usados há milhares de anos em diferentes culturas para fins religiosos, terapêuticos e relaxantes. A aromaterapia ganha destaque ao usar aromas naturais capazes de influenciar emoções, concentração e bem-estar.</p><p>A <span class="hl">cafeína</span> é conhecida por seu efeito estimulante no sistema nervoso central. Este projeto une as propriedades aromáticas do incenso aos possíveis efeitos estimulantes da cafeína, criando um produto inovador e sustentável para estudo, trabalho e meditação ativa.</p></div>
+<div class="card"><h4>🎯 Objetivo</h4><p>Explorar os benefícios da cafeína, com foco no <span class="hl">alívio da ansiedade e do estresse</span> de forma natural, por meio da aromaterapia.</p><div class="tags"><span>☕ Cafeína</span><span>🕯️ Incenso</span><span>🌱 Aromaterapia</span><span>🧪 Sustentabilidade</span></div></div>
+<div class="card"><h4>🔬 Metodologia - Pesquisa</h4><ol><li><strong>Pesquisa bibliográfica:</strong> cafeína, produção de incensos, aromaterapia, estímulos sensoriais e sustentabilidade.</li><li><strong>Seleção dos materiais:</strong> ingredientes naturais e acessíveis.</li><li><strong>Produção experimental:</strong> modelos com quantidades variadas de cafeína.</li><li><strong>Testes:</strong> participantes avaliam aroma, intensidade, fumaça e sensação de energia, registrados no diário de bordo.</li></ol><p><strong>Variáveis:</strong> quantidade de cafeína, tempo de queima e intensidade aromática. <strong>Controle:</strong> mesmo tamanho, base vegetal e ambiente.</p></div>
+<div class="card"><h4>🧪 Metodologia - Produção</h4><ol><li>Separar os ingredientes</li><li>Misturar os secos</li><li>Adicionar essência e água até formar massa firme</li><li>Modelar em bastões ou cones</li><li>Secar de 5 a 10 dias em local ventilado</li><li>Testar a queima e avaliar</li></ol><p><strong>Ingredientes:</strong> café em pó, carvão em pó, goma arábica, essência aromática, água.</p></div>
+<div class="card w"><h4>📊 Resultados Esperados</h4><div class="res"><div><b>🌿</b>Aroma agradável e diferenciado</div><div><b>⏳</b>Boa duração de queima</div><div><b>🧠</b>Sensação de estímulo e concentração</div><div><b>👍</b>Aceitação positiva</div></div><p>Também se espera comprovar a <span class="hl">viabilidade da cafeína como componente aromático</span> em produtos artesanais.</p></div>
+<div class="card w"><h4>✅ Conclusão</h4><p>Conclui-se preliminarmente que incensos com base de cafeína podem ser uma <span class="hl">alternativa inovadora e sustentável</span> para aromaterapia estimulante, contribuindo para novos estudos sobre aromas funcionais e produtos artesanais naturais.</p></div>
+<div class="card w"><h4>🏷️ Identificação do Projeto</h4><p><strong>Título:</strong> Produção de Incenso Artesanal com Base de Cafeína para Estímulo Sensorial e Aromático</p><p><strong>Turma:</strong> 3B &nbsp;•&nbsp; <strong>Professor tutor:</strong> Elisangela &nbsp;•&nbsp; <strong>Autora:</strong> Luana &nbsp;•&nbsp; <strong>Status:</strong> 🔬 Em análise</p></div>
+<div class="card w"><h4>📝 Resumo</h4><p>Desenvolver um incenso artesanal com cafeína na base aromática e analisar se ela contribui para a <span class="hl">estimulação sensorial, a sensação de energia e a concentração</span> via aromaterapia, observando aroma, duração da queima e aceitação do público, além de estudar as propriedades da cafeína.</p></div>
+<div class="card w"><h4>📚 Referências</h4><ul><li>BRASIL ESCOLA. Cafeína: características e efeitos.</li><li>Toda Matéria. Aromaterapia.</li><li>SEBRAE. Produção artesanal e sustentabilidade.</li><li>COUTO, Eliane. <em>Aromaterapia – O Poder dos Óleos Essenciais</em>. Editora Vitale, 2018.</li><li>ATKINS, Peter. <em>Princípios de Química</em>. Editora Bookman, 2012.</li></ul></div>
+</div></div>
+
+<div class="meta"><span>⏳ Resultados em: <b id="tm">05:12:30</b></span><span>📊 Participantes: <b id="pt">127</b> / meta 200</span></div>
+<div class="q">“Um aroma que desperta a mente e <span>acalma a alma</span>.”</div>
+</div>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+// plantação
+var pl=$('plant');[6,5,4,3,2].forEach(function(n,k){var r=document.createElement('div');r.className='row';r.style.opacity=1-k*.15;r.innerHTML='<i></i>'.repeat(n);pl.appendChild(r)});
+// timer
+var sec=18750;setInterval(function(){if(sec>0)sec--;var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;$('tm').textContent=[h,m,s].map(function(v){return String(v).padStart(2,'0')}).join(':')},1000);
+var pp=127;setInterval(function(){if(Math.random()<.12&&pp<200)$('pt').textContent=++pp},8000);
+// inscrição
+$('cta').onclick=function(){var b=this;if(!$('nome').value.trim()||!$('email').value.trim()){alert('Por favor, preencha seu nome e e-mail.');return}var o=b.textContent;b.textContent='✅ Inscrito com sucesso!';setTimeout(function(){b.textContent=o},3000)};
+// abas 18+
+var tabs=document.querySelectorAll('.tab');
+tabs.forEach(function(t){t.onclick=function(){tabs.forEach(function(x){x.classList.remove('on')});document.querySelectorAll('.pn').forEach(function(x){x.classList.remove('on')});t.classList.add('on');$(t.dataset.t).classList.add('on')}});
+// pop-up menores
+var st=document.querySelectorAll('.st'),dt=document.querySelectorAll('.dots i'),ic=['☕','🧠','🧪','🛡️'],cur=0;
+function show(n){cur=n;st.forEach(function(e,i){e.classList.toggle('on',i===n)});dt.forEach(function(e,i){e.classList.toggle('on',i===n)});$('em').textContent=ic[n];$('bk').disabled=n===0;$('nx').textContent=n===st.length-1?'Entendi ✓':'Próximo →'}
+function fechar(){$('pop').hidden=true}
+$('nx').onclick=function(){cur<st.length-1?show(cur+1):fechar()};
+$('bk').onclick=function(){if(cur>0)show(cur-1)};
+$('px').onclick=fechar;$('pop').onclick=function(e){if(e.target===this)fechar()};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')fechar()});
+// idade
+$('ver').onclick=function(){var a=parseInt($('idade').value,10);if(isNaN(a)||a<1||a>120){$('msg').textContent='Digite uma idade válida.';return}$('msg').textContent='';
+if(a>=18){fechar();$('lab').hidden=false;$('lab').scrollIntoView({behavior:'smooth'})}else{$('lab').hidden=true;show(0);$('pop').hidden=false}};
+$('idade').addEventListener('keydown',function(e){if(e.key==='Enter')$('ver').click()});
+</script>
+</body>
+</html>
